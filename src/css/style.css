@@ -1,0 +1,101 @@
+@charset "UTF-8";
+body {
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 580px;
+    width: 95%;
+  }
+}
+
+.btn {
+  border-radius: 10px;
+  background-color: #ffd200;
+  border: none;
+  padding: 19px 30px 17px 30px;
+}
+
+/* стили шапки */
+.navbar {
+  padding: 8px 0;
+}
+
+.navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+}
+
+.navbar__address {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.navbar__btn {
+  margin-left: 30px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.navbar__phone {
+  display: inline-block;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-top: 9px;
+}
+
+@media (max-width: 768px) {
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__btn {
+    padding: 15px 26px 14px 26px;
+  }
+  .navbar__logo {
+    width: 90px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
