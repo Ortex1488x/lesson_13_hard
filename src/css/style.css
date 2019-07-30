@@ -128,6 +128,14 @@ img {
   padding: 50px 0;
 }
 
+.hero-image {
+  margin-right: -26px;
+}
+
+.hero-image img {
+  max-width: 101%;
+}
+
 .hero-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,20 +216,30 @@ img {
 }
 
 @media (max-width: 768px) {
+  .hero-image {
+    margin-right: -16px;
+  }
+  .hero-text {
+    margin-top: -26px;
+  }
   .hero-text__title {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.4;
-    margin-bottom: 13px;
+    margin-bottom: 7px;
   }
   .hero-text__subtitle {
     font-size: 16px;
     margin-bottom: 28px;
   }
+  .hero-list {
+    margin-bottom: 34px;
+  }
   .hero-list__item {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .hero-list__text {
     font-size: 12px;
+    max-width: 233px;
   }
   .hero-list__image {
     margin-right: 15px;

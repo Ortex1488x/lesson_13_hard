@@ -1,5 +1,9 @@
 .hero
   padding: 50px 0
+  &-image
+    margin-right: -26px;
+    & img
+      max-width: 101%;
   &-block
     display: flex
   &-text
@@ -45,19 +49,24 @@
       padding-right: 10px
 @media (max-width: 768px)
   .hero
+    &-image
+      margin-right: -16px
     &-text
+      margin-top: -26px
       &__title
-        font-size: 24px
+        font-size: 22px
         line-height: 1.4
-        margin-bottom: 13px
+        margin-bottom: 7px
       &__subtitle
         font-size: 16px
         margin-bottom: 28px
     &-list
+      margin-bottom: 34px
       &__item
-        margin-bottom: 20px
+        margin-bottom: 15px
       &__text
         font-size: 12px
+        max-width: 233px
       &__image
         margin-right: 15px
 
