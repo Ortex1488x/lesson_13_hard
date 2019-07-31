@@ -1,10 +1,10 @@
 .hero
   padding: 50px 0
   &-image
-    margin-top: -5px
+    margin-top: -1px
     & img
       max-width: 100%;
-      padding-left: 4px;
+      padding-right: 21px;
   &-block
     display: flex
   &-text
@@ -50,7 +50,7 @@
 @media (max-width: 1200px)
   .hero
     &-image
-      margin-right: 0
+      padding-top: 3px;
     &-block
       flex-direction: column
     &-list
@@ -60,6 +60,8 @@
 @media (max-width: 768px)
   .hero
     &-image
+      & img
+        padding-right: 0
     &-text
       margin-top: -26px
       &__title
@@ -89,6 +91,13 @@
         margin-bottom: 1px;
 @media (max-width: 567px)
   .hero
-    &-text__title
-      letter-spacing: 0.31px;
-      margin-left: 4px;
+    &-text
+      padding-right: 0
+      &__title
+        letter-spacing: 0.31px;
+        margin-left: 4px;
+        margin-top: 13px;
+        margin-bottom: 4px;
+        font-size: 23px;
+      &__subtitle
+        margin-bottom: 28px;
