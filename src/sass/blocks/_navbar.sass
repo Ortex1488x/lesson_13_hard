@@ -12,19 +12,21 @@
     flex-direction: column
     display: flex
     font-size: 13px
-    font-weight: 400
+    +reg
     color: $text-color
+    line-height: 10px;
   &__btn
-    margin-left: 31px
+    padding-left: 31px
+    margin-left: 29px;
     font-size: 13px
-    font-weight: 400
+    +bold 
   &__phone
     display: inline-block
     color: $text-color
     font-size: 20px
-    font-weight: 400
     text-decoration: none
     margin-top: 8px
+    +bold
 @media (max-width: 768px)
   .navbar
     &__contacts
@@ -38,6 +40,6 @@
     padding: 17px 0
     &__btn
       font-size: 10px
-      padding: 15px 26px 14px 28px
+      padding: 15px 25px 14px 25px;
       margin-bottom: 4px
-      margin-right: 1px
+      margin-right: -3px;
