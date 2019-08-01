@@ -1,5 +1,6 @@
 .hero
   padding: 50px 0
+  background-color: $secondary
   &-image
     margin-top: -1px
     & img
@@ -9,7 +10,7 @@
     display: flex
   &-text
     flex-basis: 44%
-    padding-right: 110px
+    padding-right: 10px
     &__title
       color: $text-color
       font-size: 41px
@@ -31,6 +32,8 @@
       display: flex
       align-items: center
       margin-bottom: 25px
+      &:last-child
+        margin-bottom: 0
     &__image
       width: 37px;
       height: 38px;

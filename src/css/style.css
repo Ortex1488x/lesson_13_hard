@@ -15,6 +15,11 @@
   font-style: normal;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
@@ -55,10 +60,36 @@ img {
   padding: 19px 29px 16px 36px;
 }
 
+.btn:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
+}
+
 @media (max-width: 567px) {
   .btn {
     border-radius: 5px;
   }
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.section-title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.section-subtitle {
+  font-size: 16px;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 20px 26px 20px 26px;
+  color: #999999;
+  font-size: 15px;
+  border-radius: 10px;
 }
 
 /* стили шапки */
@@ -146,6 +177,7 @@ img {
 /* стили  главного экрана*/
 .hero {
   padding: 50px 0;
+  background-color: #f5f5f5;
 }
 
 .hero-image {
@@ -166,7 +198,7 @@ img {
 .hero-text {
   -ms-flex-preferred-size: 44%;
       flex-basis: 44%;
-  padding-right: 110px;
+  padding-right: 10px;
 }
 
 .hero-text__title {
@@ -200,6 +232,10 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 25px;
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .hero-list__image {
@@ -298,6 +334,83 @@ img {
   }
   .hero-text__subtitle {
     margin-bottom: 28px;
+  }
+}
+
+/* стили блока офер */
+.offer {
+  background: url("../img/kuhna.jpg") no-repeat;
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  background-color: #fff;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer__title {
+  max-width: 360px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+
+.offer__subtitle {
+  display: block;
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  width: 240px;
+  margin-bottom: 30px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 67px;
+  color: #333333;
+  font-size: 16px;
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 13px;
+    letter-spacing: -0.4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
