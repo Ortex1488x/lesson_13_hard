@@ -18,11 +18,12 @@
   &__title
     max-width: 360px
     line-height: 35px
-    margin-bottom: 24px
+    margin-bottom: 20px
+    margin-top: -14px
   &__subtitle
     display: block
     max-width: 250px
-    margin-bottom: 30px
+    margin-bottom: 32px
   &__input
     width: 240px
     margin-bottom: 30px
@@ -30,7 +31,8 @@
       margin-right: 10px
   &__button
     width: 100%
-    min-height: 67px
+    padding: 17px 37px 17px 36px;
+    min-height: 70px
     color: $text-color
     font-size: 16px
     +bold
@@ -49,3 +51,52 @@
     &-block
       width: 100%
       padding-right: 0
+.info
+  width: 100%;
+  display: flex;
+  &__support
+    margin-top: 28px;
+    +reg 
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 94px;
+    &:first-child
+      margin-right: 70px;
+  & b
+    +bold 
+@media (max-width: 567px)
+  .offer
+    padding-top: 48px
+    &__title
+      max-width: 274px;
+      line-height: 23px;
+      margin-bottom: 14px;
+      margin-top: -14px;
+      font-size: 18px;
+      margin-top: 0px;
+    &__input
+      margin-bottom: 7px;
+    &__subtitle
+      margin-bottom: 27px;
+      +reg 
+      font-size: 14px;
+    &__input
+      padding: 23px 26px 23px 26px;
+    &__button
+      margin-top: 4px;
+      padding: 18px 37px 18px 36px;
+      font-size: 15px;
+      border-radius: 10px;
+      margin-bottom: 22px
+  .info
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    margin-left: 9px;
+    &__support
+      display: block
+      margin-bottom: 0
+      margin-top: 0
+      &:first-child
+        margin-right: 0
+        margin-bottom: 9px

@@ -57,7 +57,7 @@ img {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
-  padding: 19px 29px 16px 36px;
+  padding: 16px 29px 17px 36px;
 }
 
 .btn:hover {
@@ -86,7 +86,7 @@ img {
 
 .input {
   border: 1px solid #dddddd;
-  padding: 20px 26px 20px 26px;
+  padding: 22px 26px 22px 26px;
   color: #999999;
   font-size: 15px;
   border-radius: 10px;
@@ -182,11 +182,11 @@ img {
 
 .hero-image {
   margin-top: -1px;
+  margin-left: 26px;
 }
 
 .hero-image img {
   max-width: 100%;
-  padding-right: 21px;
 }
 
 .hero-block {
@@ -196,8 +196,8 @@ img {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 44%;
-      flex-basis: 44%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   padding-right: 10px;
 }
 
@@ -221,7 +221,7 @@ img {
 
 .hero-list {
   margin: 0;
-  padding: 0;
+  padding: 2px;
 }
 
 .hero-list__item {
@@ -231,7 +231,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 .hero-list__item:last-child {
@@ -259,7 +259,6 @@ img {
   max-width: 300px;
   line-height: 1.6;
   font-size: 14px;
-  letter-spacing: 0.6px;
   font-weight: 600;
 }
 
@@ -313,6 +312,8 @@ img {
     line-height: 1.2;
   }
   .hero-list__image {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
     margin-right: 15px;
     padding-top: 1px;
     padding-left: 2px;
@@ -322,6 +323,9 @@ img {
 }
 
 @media (max-width: 567px) {
+  .hero-image {
+    margin-left: 0;
+  }
   .hero-text {
     padding-right: 0;
   }
@@ -364,13 +368,14 @@ img {
 .offer__title {
   max-width: 360px;
   line-height: 35px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  margin-top: -14px;
 }
 
 .offer__subtitle {
   display: block;
   max-width: 250px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .offer__input {
@@ -384,7 +389,8 @@ img {
 
 .offer__button {
   width: 100%;
-  min-height: 67px;
+  padding: 17px 37px 17px 36px;
+  min-height: 70px;
   color: #333333;
   font-size: 16px;
   font-family: 'Museo Sans Bold', sans-serif;
@@ -411,6 +417,78 @@ img {
   .offer-block {
     width: 100%;
     padding-right: 0;
+  }
+}
+
+.info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info__support {
+  margin-top: 28px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 94px;
+}
+
+.info__support:first-child {
+  margin-right: 70px;
+}
+
+.info b {
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+@media (max-width: 567px) {
+  .offer {
+    padding-top: 48px;
+  }
+  .offer__title {
+    max-width: 274px;
+    line-height: 23px;
+    margin-bottom: 14px;
+    margin-top: -14px;
+    font-size: 18px;
+    margin-top: 0px;
+  }
+  .offer__input {
+    margin-bottom: 7px;
+  }
+  .offer__subtitle {
+    margin-bottom: 27px;
+    font-family: 'Museo Sans Light', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .offer__input {
+    padding: 23px 26px 23px 26px;
+  }
+  .offer__button {
+    margin-top: 4px;
+    padding: 18px 37px 18px 36px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+  }
+  .info {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    margin-left: 9px;
+  }
+  .info__support {
+    display: block;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .info__support:first-child {
+    margin-right: 0;
+    margin-bottom: 9px;
   }
 }
 /*# sourceMappingURL=style.css.map */
