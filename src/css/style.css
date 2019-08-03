@@ -570,6 +570,12 @@ img {
 }
 
 /* модельное окно */
+.container-dialog {
+  width: 370px;
+  height: 518px;
+  margin: auto;
+}
+
 .modal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,6 +589,24 @@ img {
   display: none;
 }
 
+.modal__input {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.modal__input:first-child {
+  margin-bottom: 17px;
+}
+
+.modal__button {
+  margin-bottom: 31px;
+  width: 100%;
+  font-size: 16px;
+  padding: 25px 0px;
+  padding-left: 7px;
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
 .modal_active {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -592,16 +616,65 @@ img {
 .modal-dialog {
   position: relative;
   margin: auto;
-  max-width: 450px;
-  width: 90%;
-  min-width: 200px;
+  min-width: 570px;
+  min-height: 670px;
   background-color: #fff;
-  padding: 40px;
+}
+
+.modal-dialog__title {
+  margin-top: 72px;
+  margin-left: 8px;
+  margin-bottom: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #333333;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.modal-dialog__subtitle {
+  margin-left: 8px;
+  margin-bottom: 50px;
+  font-size: 16px;
+  text-align: center;
 }
 
 .modal-dialog__close {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.modal__support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  width: 291px;
+  color: #333333;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.modal__support.fally {
+  font-family: 'Museo Sans Bold', sans-serif;
+  color: #333333;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
