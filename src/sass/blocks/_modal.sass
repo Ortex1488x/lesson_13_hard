@@ -69,3 +69,56 @@
       justify-content: center
       margin: auto
       text-align: center
+@media (max-width: 768px)
+  .container
+    &-dialog
+      width: 270px
+      height: 418px
+      margin: auto
+  .modal
+    &-dialog
+      min-width: 400px
+      min-height: 500px
+      background-color: #fff
+      &__title
+        margin-top: 10px
+        margin-bottom: 10px
+        font-size: 19px
+      &__subtitle
+        margin-bottom: 19px
+        font-size: 14px
+    &__input
+      margin-bottom: 10px
+      &:first-child
+        margin-bottom: 10px
+    &__support
+      font-size: 13px
+      &.fally
+        font-size: 19px
+@media (max-width: 567px)
+  .container
+    &-dialog
+      width: 220px
+      height: 328px
+      margin: auto
+  .modal
+    &-dialog
+      min-width: 300px
+      min-height: 500px
+      background-color: #fff
+      &__title
+        margin-top: 10px
+        margin-bottom: 10px
+        font-size: 16px
+      &__subtitle
+        margin-bottom: 19px
+        font-size: 12px
+    &__input
+      margin-bottom: 10px
+      &:first-child
+        margin-bottom: 10px
+    &__support
+      font-size: 12px
+      width: 200px
+      &.fally
+        font-size: 19px

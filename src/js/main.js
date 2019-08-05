@@ -4,6 +4,7 @@ var close  = document.querySelector('#close');
 
 button.addEventListener('click', function() {
   modal.classList.add('modal_active');
+  setTimeout(closeModalDialog, 5000)
 });
 
 close.addEventListener('click', function() {
@@ -11,6 +12,6 @@ close.addEventListener('click', function() {
 });
 
 
-setTimeout(function () { 
+function closeModalDialog() { 
   modal.classList.remove('modal_active');
-}, 5000);
+};
