@@ -132,6 +132,10 @@ input:focus {
   padding: 0;
 }
 
+.arrows {
+  cursor: pointer;
+}
+
 /* стили шапки */
 .navbar {
   padding: 8px 0;
@@ -611,6 +615,36 @@ input:focus {
 
 .none {
   display: none;
+}
+
+/* стили блока портфолио */
+.portfolio {
+  background: #f5f5f5 url("../img/slider/bgc.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  margin: auto;
+  margin-bottom: 93px;
+  padding-top: 89px;
+  line-height: 45px;
+  font-size: 30px;
+}
+
+.portfolio__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider__img {
+  margin: auto;
 }
 
 /* модельное окно */
