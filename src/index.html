@@ -11,6 +11,9 @@
 </head>
 
 <body>
+  <div id="toTop">
+    <p class="ff">^</p> 
+  </div>
   <nav class="navbar">
     <div class="container">
       <div class="navbar-block">
@@ -67,7 +70,7 @@
       <!-- /.container -->
     </section>
     <!-- /.hero -->
-    <section class="offer section">
+    <section id="offer" class="offer section">
       <div class="container">
           <div class="offer-block">
             <h2 class="section-title offer__title">
@@ -81,12 +84,14 @@
               бесплатного дизайн-проекта!
             </span>
             <!-- /.section-subtitle -->
-            <form action="#" class="form offer_form">
-              <input type="text" class="input offer__input" placeholder="Ваше имя">
-              <input type="tel" class="input offer__input" placeholder="Ваш телефон">
-              <button class="btn offer__button">Получить бесплатный дизайн-проект</button>
+            <form action="#" id="offer-form" class="form offer_form">
+              <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+              <input type="tel" name="userphone" class="input offer__input" placeholder="Ваш телефон">
+              <button id="close2" class="btn offer__button">Получить бесплатный дизайн-проект</button>
             </form>
+            <div class="none" class="success-support">Спасибо за заявку, скоро мы вам перезвоним.</div>
             <!-- /.form offer_form -->
+            <div class="success"></div>
             <div class="info">
               <span class="info__support">Наш менеджер перезвонит Вам</br>
                 в течение 60 секунд</span>
@@ -97,6 +102,21 @@
       <!-- /.container -->
     </section>
     <!-- /.offer -->
+    <section class="srction portfolio">
+      <div class="container">
+        <h2 class="section-title portfolio__title">Работая с 2007 года,<br> мы сделали более 500 ремонтов в квартирах и домах</h2>
+        <div class="slider">
+          <div class="slider__item"><img src="img/slider/slid1.jpg" alt="картинка слайдера"></div>
+          <div class="slider__item"><img src="img/slider/slid2.jpg" alt="картинка слайдера"></div>
+          <div class="slider__item"><img src="img/slider/slid3.jpg" alt="картинка слайдера"></div>
+          <div class="slider__item"><img src="img/slider/slid1.jpg" alt="картинка слайдера"></div>
+          <div class="slider__item"><img src="img/slider/slid2.jpg" alt="картинка слайдера"></div>
+          <div class="slider__item"><img src="img/slider/slid3.jpg" alt="картинка слайдера"></div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.srction portfolio -->
   </main>
 
   <div class="modal" id="modal">
@@ -121,6 +141,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/modal.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

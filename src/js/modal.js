@@ -9,3 +9,19 @@ $(document).ready(function () {
     modal.removeClass('modal_active');
   });
 });
+
+
+$(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() >= 50) {
+      $('#toTop').fadeIn();
+    } else {
+      $('#toTop').fadeOut();
+    }
+  });
+
+  $('#toTop').click(function () {
+    $('body,html').animate({ scrollTop: 0 }, 1000);
+  });
+});
+

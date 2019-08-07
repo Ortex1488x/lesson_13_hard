@@ -33,6 +33,11 @@ img {
   max-width: 100%;
 }
 
+input:focus {
+  outline: none;
+  border: 1px solid #ffd200;
+}
+
 .container {
   width: 1170px;
   margin: auto;
@@ -83,6 +88,7 @@ img {
 .section-title {
   font-size: 24px;
   font-family: 'Museo Sans Bold', sans-serif;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -95,6 +101,35 @@ img {
   color: #999999;
   font-size: 15px;
   border-radius: 10px;
+}
+
+#toTop {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background: #ccc;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  z-index: 111;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  color: #333333;
+  font-size: 11px;
+}
+
+#toTop p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 /* стили шапки */
@@ -396,6 +431,7 @@ img {
   line-height: 35px;
   margin-bottom: 21px;
   margin-top: -14px;
+  text-align: left;
 }
 
 .offer__subtitle {
@@ -568,6 +604,15 @@ img {
   }
 }
 
+.success-support {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 22px;
+}
+
+.none {
+  display: none;
+}
+
 /* модельное окно */
 .container-dialog {
   width: 370px;
@@ -645,6 +690,7 @@ img {
 }
 
 .modal-dialog__close {
+  cursor: pointer;
   position: absolute;
   top: 0;
   right: 0;
